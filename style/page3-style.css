@@ -1,0 +1,35 @@
+.container{
+  top: 0;
+  left: 0;
+
+}
+
+.field{
+  text-align: center;
+  width: 1300px;
+ height: 600px;
+ width: 900px;
+ position: relative;
+ border: 3px solid black;
+ float: left;
+ margin: 20px;
+ text-align: center;
+
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.text h1{
+  text-align: center;
+
+}
+.text p {
+  text-align: center;
+
+}
