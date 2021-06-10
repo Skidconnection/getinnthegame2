@@ -1,17 +1,18 @@
 .container{
-  top: 0;
-  left: 0;
-
+margin:0 auto;
+width:100%;
+position:relative;
 }
 
 .field{
   text-align: center;
  height: 450px;
- width: 800px;
+ width: calc(50% - 16px);
+ float:left;
  position: relative;
  border: 3px solid black;
- float: left;
- margin: 20px;
+ margin-left:8px;
+
  text-align: center;
 
 }

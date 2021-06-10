@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="NL" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style/page2-style.css">
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="text">
-        <h1>U kunt kiezen:</h1>
-        <p>Of u wilt een tekst lezen over een bepaald onderwerp of je speelt het spelletje. Klik op de knop om uw keuze te maken.</p>
-      </div>
-    <center>
-      <div class="field">
-          <div class="vertical-center">
-                <a href="exercises/game2.html"><button type="button" name="button">Speel het spel</button></a>
-          </div>
-      </div>
-      <div class="field">
-        <div class="vertical-center">
-            <a href="exercises/text2.html"><button type="button" name="button">Lees de tekst</button></a>
-          </div>
-      </div>
-    </center>
-  </body>
-  <script type="text/javascript">
-  window.history.forward();
-  function noBack() {
-    window.history.forward();
-  }
-  </script>
-  <script type="text/javascript">
-        (function (global) {
+ <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style/page1-style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+ </head>
+ <body>
+   <div class="container">
+     <div class="text">
+       <h1>U kunt kiezen:</h1>
+       <p>Of u wilt een tekst lezen over een bepaald onderwerp of je speelt het spelletje. Klik op de knop om uw keuze te maken.</p>
+     </div>
+     <div class="field">
+         <div class="vertical-center">
+               <a href="exercises/game2.html"><button type="button" name="button">Speel het spel</button></a>
+         </div>
+     </div>
+     <div class="field">
+       <div class="vertical-center">
+           <a href="exercises/text2.html"><button type="button" name="button">Lees de tekst</button></a>
+         </div>
+     </div>
+ </div>
+ </body>
+ <script type="text/javascript">
+ window.history.forward();
+ function noBack() {
+   window.history.forward();
+ }
+ </script>
+ <script type="text/javascript">
+     (function (global) {
 
-      if(typeof (global) === "undefined") {
-          throw new Error("window is undefined");
-      }
+   if(typeof (global) === "undefined") {
+       throw new Error("window is undefined");
+   }
 
-      var _hash = "!";
-      var noBackPlease = function () {
-          global.location.href += "#";
+   var _hash = "!";
+   var noBackPlease = function () {
+       global.location.href += "#";
 
-          global.setTimeout(function () {
-              global.location.href += "!";
-          }, 50);
-      };
+       global.setTimeout(function () {
+           global.location.href += "!";
+       }, 50);
+   };
 
-      global.onhashchange = function () {
-          if (global.location.hash !== _hash) {
-              global.location.hash = _hash;
-          }
-      };
+   global.onhashchange = function () {
+       if (global.location.hash !== _hash) {
+           global.location.hash = _hash;
+       }
+   };
 
-      global.onload = function () {
-          noBackPlease();
+   global.onload = function () {
+       noBackPlease();
 
-          document.body.onkeydown = function (e) {
-              var elm = e.target.nodeName.toLowerCase();
-              if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
-                  e.preventDefault();
-              }
-              e.stopPropagation();
-          };
-      }
-  })(window);
-  </script>
+       document.body.onkeydown = function (e) {
+           var elm = e.target.nodeName.toLowerCase();
+           if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+               e.preventDefault();
+           }
+           e.stopPropagation();
+       };
+   }
+})(window);
+ </script>
 </html>
